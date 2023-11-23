@@ -1,6 +1,4 @@
-from pickle import FALSE
-from re import sub
-
+import funcao
 
 Nome = "Paulo Eduardo Santos Oliveira"
 Idade = 20
@@ -14,12 +12,12 @@ Altura = {}
 Estudante = {}
 """.format(type(Nome), type (Idade), type (Altura), type (Estudante)))
 
-Soma = 5 + 3
-Sub = 5 - 3
-Prod = 5 * 3
-Divi = 5 / 3
-print("Operadores matemáticos: Soma = ", Soma, "Subtração = ", Sub,
-"Multiplicação = ", Prod, "Divisão = ", Divi)
+soma = 5 + 3
+sub = 5 - 3
+mult = 5 * 3
+divi = 5 / 3
+print("Operadores matemáticos: Soma = ", soma, "Subtração = ", sub,
+"Multiplicação = ", mult, "Divisão = ", divi)
 
 Igual = 5 == 3
 Difer = 5 != 3
