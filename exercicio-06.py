@@ -10,7 +10,7 @@ def exibirMenu(cardapio):
 def adicionarPedido(pedido):
     while True:
         itemPedido = input("Digite o número do pedido que você deseja. (ou 's' para sair):")
-        if itemPedido == "s":
+        if itemPedido.lower() == "s":
             return True
         elif int(itemPedido) == 1:
             pedido["BigMac"] = 30.00
@@ -59,9 +59,13 @@ def exibirPedido(pedido):
         print(lanches, preco)
     return True
 
-def totalPedido(pedido):
-    print(pedido.values())
+def totalPedido(pedidoTotal):
+    totalPedido = sum(pedidoTotal.values())
+    print(f"O total do seu pedido é igual a: R${totalPedido}")
+    return True 
 
+def encerrarPrograma():
+    print("Obrigado por escolher a nossa lanchonete, bom lanche e volte sempre.")
 
 menu = {
     "1.BigMac:": "R$30,00",
@@ -98,3 +102,10 @@ while status == True:
 
     elif opcoes == "5":
         status = totalPedido(pedido)
+        
+    elif opcoes == "6":
+        status = encerrarPrograma()
+    
+    else:
+        print("Opção não encontrada.")
+        status = True
