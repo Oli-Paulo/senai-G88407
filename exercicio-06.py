@@ -33,22 +33,22 @@ def adicionarPedido(pedido):
 def removerPedido(pedido):
     while True:
         itemPedido = input("Digite o número do pedido que você deseja retirar. (ou 's' para sair):")
-        if itemPedido == "s":
+        if itemPedido.lower() == "s":
             return True
         elif int(itemPedido) == 1:
             pedido.pop("BigMac")
 
         elif int(itemPedido) == 2:
-            pedido.pop["BigTasty"] = 33.00
+            pedido.pop("BigTasty")
 
         elif int(itemPedido) == 3:
-            pedido.pop["Refri"] = 9.00
+            pedido.pop("Refri")
 
         elif int(itemPedido) == 4:
-            pedido.pop["Milk Shake"] = 12.00
+            pedido.pop("Milk Shake")
 
         elif int(itemPedido) == 5:
-            pedido.pop["Batata frita M"] = 7.00
+            pedido.pop("Batata frita M")
         
         else:
             print("Informação não encontrada.")
