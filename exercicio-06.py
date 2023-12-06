@@ -53,9 +53,8 @@ def removerPedido(pedido):
         else:
             print("Informação não encontrada.")
 
-
-def exibirPedido(pedido):
-    for lanches, preco in pedido.items():
+def exibirPedido(mostrarPedido):
+    for lanches, preco in mostrarPedido.items():
         print(lanches, preco)
     return True
 
