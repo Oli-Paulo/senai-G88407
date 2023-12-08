@@ -16,3 +16,17 @@ data = {
 }
 tabela = pd.DataFrame(data)
 print(tabela)
+
+#Exemplo de pandas
+dados = {
+    "NOME": ["Paulo", "Victor", "Wendel"],
+    "IDADE": [18, 19, 20],
+    "CIDADE": ["Camaçari", "Feira", "Itapiririca"]
+}
+
+dF = pd.DataFrame(dados)
+print(dF)
+
+for dado in dF.values:
+    # print(dado)
+    print(dado[0])
